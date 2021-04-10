@@ -1,14 +1,31 @@
-import Dependencies._
-
-ThisBuild / scalaVersion     := "2.13.4"
-ThisBuild / version          := "0.1.0-SNAPSHOT"
-ThisBuild / organization     := "com.example"
+ThisBuild / scalaVersion := "2.13.5"
+ThisBuild / version := "1.0.0"
+ThisBuild / organization := "com.example"
 ThisBuild / organizationName := "example"
 
 lazy val root = (project in file("."))
   .settings(
     name := "scala2",
-    libraryDependencies += scalaTest % Test
+    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.2",
+    scalacOptions := Seq(
+      "-Xsource:2.13",
+      "-unchecked",
+      "-feature",
+      "-deprecation",
+      "-Xlint",
+      "-encoding",
+      "UTF8",
+      "-target:jvm-1.11",
+      "-Ywarn-numeric-widen",
+      "-Ywarn-value-discard",
+      "-Ywarn-dead-code",
+      "-Ywarn-unused:implicits",
+      "-Ywarn-unused:imports",
+      "-Ywarn-unused:locals",
+      "-Ywarn-unused:params",
+      "-Ywarn-unused:patvars",
+      "-Ywarn-unused:privates",
+      "-language:experimental.macros",
+      "-Xfatal-warnings"
+    )
   )
-
-// See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for instructions on how to publish to Sonatype.
