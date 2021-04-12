@@ -1,9 +1,14 @@
 package syntax
 
 // import * is now the recommended alternative to import _
-// Like: Java, Kotlin, Python, Javascript, .......
+// Like basically all other languages
 import syntax._
 import syntax.*
+
+// ? is now the generic wildcard instead of _
+// Like basically all other languages
+val list1: List[_] = List.empty
+val list2: List[?] = List()
 
 // new is now optional
 // Like: Kotlin

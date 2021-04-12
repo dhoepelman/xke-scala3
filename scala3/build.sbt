@@ -16,6 +16,7 @@ lazy val root = project
       "-deprecation",
       "-encoding",
       "UTF8",
-      "-Xfatal-warnings"
+      "-Xfatal-warnings",
+      "-Yexplicit-nulls"
     )
   )

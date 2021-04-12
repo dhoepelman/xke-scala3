@@ -1,4 +1,4 @@
-package language
+package types
 
 def foo(a: String, b: String) = {}
 
