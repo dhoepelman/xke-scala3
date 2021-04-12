@@ -6,7 +6,7 @@ object Typeclasses extends App {
     def toJson(t: T): String
   }
 
-  given jsonInt: ToJson[Int] with {
+  given ToJson[Int] with {
     override def toJson(t: Int): String = t.toString
   }
 

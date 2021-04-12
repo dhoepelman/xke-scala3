@@ -1,12 +1,12 @@
 ThisBuild / scalaVersion := "2.13.5"
 ThisBuild / version := "1.0.0"
-ThisBuild / organization := "com.example"
-ThisBuild / organizationName := "example"
+ThisBuild / organization := "xke.scala3"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "scala2",
+    name := "scala2library",
     libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.2",
+    //libraryDependencies += ("xke.scala3" %% "scala3" % "1.0.0").cross(CrossVersion.for2_13Use3),
     scalacOptions := Seq(
       "-Xsource:2.13",
       "-unchecked",
