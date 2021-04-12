@@ -1,3 +1,0 @@
-package implicitsold
-
-class Conversion {}

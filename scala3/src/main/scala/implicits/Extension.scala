@@ -1,4 +1,4 @@
-package implicitsold
+package implicits
 
 // Extension functions
 trait Animal
