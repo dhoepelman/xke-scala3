@@ -7,7 +7,7 @@ lazy val root = project
     version := "1.0.0",
     organization := "xke.scala3",
     scalaVersion := scala3Version,
-    libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.7",
+    //libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.7",
     libraryDependencies += ("xke.scala3" %% "scala2library" % "1.0.0").cross(CrossVersion.for3Use2_13),
     scalacOptions := Seq(
       "-unchecked",
